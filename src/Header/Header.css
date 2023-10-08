@@ -1,4 +1,4 @@
-header {
+.header {
   background-color: #010101;
   position: fixed;
   width: 270px;
@@ -6,16 +6,49 @@ header {
   left: 0;
   top: 0;
   z-index: 1000;
+
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(0);
 }
 
-header > a {
-  color: white;
+.header.close {
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-270px);
+}
+
+.header > a {
+  color: #ffffff;
   text-decoration: none;
   padding: 0 1rem;
 }
 
-header > a:hover {
+.header > a:hover {
   text-decoration: underline;
+}
+
+.header_icon {
+  color: #010101;
+  position: relative;
+}
+
+.menu_icon {
+  float: right;
+  position: absolute;
+  right: -25px;
+}
+
+.menu_close {
+  display: none !important;
+}
+
+.close_icon {
+  float: right;
+  position: absolute;
+  right: -25px;
+}
+
+.close_close {
+  display: none !important;
 }
 
 .header_routing {
