@@ -42,6 +42,7 @@
   align-items: center;
   flex-wrap: nowrap;
   padding: 12px 27.5px 12px 27.5px;
+  cursor: pointer;
 }
 .suggestions_btn p {
   padding-left: 8px;
@@ -53,6 +54,7 @@
   color: #010101;
   padding: 12px 27.5px 12px 27.5px;
   margin-left: 10px;
+  cursor: pointer;
 }
 .time_left {
   flex: 1 1 40%;
