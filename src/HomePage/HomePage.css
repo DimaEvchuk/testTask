@@ -3,17 +3,20 @@
 
 .home {
   background: #000000;
-  opacity: 0.9;
-  width: 100%;
-  height: 100vh;
+  /* background-size: 100%; */
+  /* background-repeat: no-repeat; */
+
+  opacity: 0.95;
+  /* width: 100vw; */
+  /* height: 100vh; */
   /* background: linear-gradient(197deg, #ff583d 0%, #000 71.14%); */
 }
 .background {
   background: linear-gradient(185deg, #ff583d -12%, #000 71.14%);
-  background-size: 200% 100%;
+  background-size: 200% 80%;
   background-repeat: no-repeat;
   /* background-image: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%); */
-  height: 400px;
+  /* height: 400px; */
 }
 .homePage {
   padding: 0px 107px 0px 107px;
