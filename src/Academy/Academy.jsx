@@ -1,22 +1,37 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Academy.css";
 import AcademyJSON from "../Academy.json";
 
 import SchoolOutlinedIcon from "@mui/icons-material/SchoolOutlined";
-// import SchoolIconOutlined from '@mui/icons-material/SchoolOutlined';
 
 const Academy = () => {
+  const videoRefs = useRef([]);
+
+  const handleMouseEnter = (index) => {
+    videoRefs.current[index].play();
+  };
+
+  const handleMouseLeave = (index) => {
+    videoRefs.current[index].pause();
+    videoRefs.current[index].currentTime = 0;
+  };
+
   return (
     <>
       <div className="academy">
         <div>Academy</div>
         <div className="data-display">
           {AcademyJSON.sections.map((section, index) => (
-            <div className="data-display__section" key={index}>
+            <div
+              className="data-display__section"
+              key={index}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={() => handleMouseLeave(index)}
+            >
               <video
                 key={index}
+                ref={(el) => (videoRefs.current[index] = el)}
                 src="/Reels/Rells1(360p21rfSocial).mp4"
-                autoPlay
                 loop
                 muted
               />
