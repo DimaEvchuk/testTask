@@ -4,7 +4,7 @@
 .home {
   background: #000000;
   opacity: 0.9;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   /* background: linear-gradient(197deg, #ff583d 0%, #000 71.14%); */
 }
