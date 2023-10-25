@@ -60,6 +60,9 @@ function Header() {
           <NavLink to="/community" onClick={closeMenu}>
             Community
           </NavLink>
+          <NavLink to="/academy" onClick={closeMenu}>
+          Academy
+          </NavLink>
         </nav>
       </header>
 
