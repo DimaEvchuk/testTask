@@ -14,8 +14,8 @@ const HomePage = () => {
           <div className="blocks">
             <QA />
             <Events />
-            <Academy />
             <Blinks />
+            <Academy />
           </div>
         </div>
       </div>

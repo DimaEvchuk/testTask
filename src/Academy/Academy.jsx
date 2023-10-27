@@ -34,6 +34,7 @@ const Academy = () => {
                 src="/Reels/Rells1(360p21rfSocial).mp4"
                 loop
                 muted
+                speed="500"
               />
               <div class="data-display__section-video-overlay"></div>
               <div className="data-display__section-block">
