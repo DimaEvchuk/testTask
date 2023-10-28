@@ -2,7 +2,7 @@ import React from "react";
 import "./HomePage.css";
 import QA from "./QA/QA.jsx";
 import Events from "./Events/Events.jsx";
-import Academy from "./Academy/Academy.jsx";
+import AcademyView from "./AcademyView/AcademyView.jsx";
 import Blinks from "./Blinks/Blinks.jsx";
 
 const HomePage = () => {
@@ -15,7 +15,7 @@ const HomePage = () => {
             <QA />
             <Events />
             <Blinks />
-            <Academy />
+            <AcademyView />
           </div>
         </div>
       </div>
