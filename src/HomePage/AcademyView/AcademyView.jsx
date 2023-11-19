@@ -6,6 +6,7 @@ const AcademyView = () => {
   return (
     <div className="AcademyView">
       <ReelsOnHome />
+      fsdfsd
     </div>
   );
 };
